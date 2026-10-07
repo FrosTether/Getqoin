@@ -1,0 +1,1 @@
+import{t as e}from"./get-qoin-Bu_6xSTH.js";var t=e;export{t as component};

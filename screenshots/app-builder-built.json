@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Get Qoin | finux",
+      "hasCanvas": false,
+      "bodyTextLen": 3223,
+      "bodyTextHash": "5a9c7b60a1221d80aa846adb8bac570643e31a7d05eb64f497dd9221bdee5979",
+      "bodyTextPrefix": "finux Get Qoin Projects Open source GitHub Contact Proof of conc",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Get Qoin | finux",
+      "hasCanvas": false,
+      "bodyTextLen": 3223,
+      "bodyTextHash": "5a9c7b60a1221d80aa846adb8bac570643e31a7d05eb64f497dd9221bdee5979",
+      "bodyTextPrefix": "finux Get Qoin Projects Open source GitHub Contact Proof of conc",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

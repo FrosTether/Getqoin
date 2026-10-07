@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Martian Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --color-paper: #ece9f1;
+  --color-ink: #24182e;
+  --color-soft: #5e5168;
+  --color-rule: #cec6d8;
+  --color-card: #f6f3f9;
+  --color-panel: #2a1836;
+  --color-panel-ink: #f1ebf6;
+  --color-panel-soft: #b3a5c0;
+  --color-panel-line: #46324f;
+  --color-lens: #3d2b4a;
+  --color-magenta: #b8336a;
+  --color-magenta-hot: #c63d76;
+  --color-violet: #6a4bb0;
+  --color-lamp: #ffb238;
+  --color-alarm: #ff4d3d;
+  --color-on-magenta: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #150e1a;
+    --color-ink: #ece6f2;
+    --color-soft: #a99bb5;
+    --color-rule: #33263d;
+    --color-card: #1e1426;
+  }
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.55;
+  }
+
+  a {
+    color: var(--color-ink);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  a:hover,
+  a:focus-visible {
+    color: var(--color-magenta);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-lamp);
+    outline-offset: 3px;
+  }
+}
+
+@utility display {
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  font-variation-settings: "wdth" 112;
+  text-wrap: balance;
+}
+
+.section {
+  margin: 2.5rem 0 0.75rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  font-variation-settings: "wdth" 112;
+}
+
+@utility mono-tight {
+  font-family: var(--font-mono);
+  font-variation-settings: "wdth" 87.5;
+}
